@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  /*---------------------------HEADER--------------------------*/
+  /*---------------------------MAIN--------------------------*/
+  /*---------------------------FOOTER--------------------------*/ }
+  body .contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden; }
+  body header {
+    width: 100%;
+    background: url("../img/bg.jpg") #4F2E23;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0; }
+    body header .contenedor {
+      position: relative;
+      height: 700px; }
+    body header .menu {
+      width: 100%;
+      text-align: right; }
+      body header .menu a {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        display: inline-block;
+        margin: 40px 20px;
+        text-decoration: none;
+        position: relative; }
+        body header .menu a:hover {
+          text-decoration: underline; }
+    body header .textos {
+      width: 100%;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      margin-top: -52px; }
+      body header .textos .nombre {
+        font-size: 50px;
+        font-weight: 700;
+        font-style: italic; }
+        body header .textos .nombre span {
+          font-weight: 300; }
+      body header .textos h3 {
+        font-weight: 300;
+        font-size: 25px;
+        font-style: italic; }
+  body .main {
+    background: url("../img/bg-textura.png");
+    background-repeat: repeat;
+    /*---------------------------MENU--------------------------*/
+    /*---------------------------GALERIA--------------------------*/ }
+    body .main .acerca-de .contenedor {
+      overflow: visible;
+      position: relative; }
+    body .main .acerca-de .foto {
+      width: 80%;
+      position: absolute;
+      left: 0;
+      top: -50px;
+      z-index: 0;
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35); }
+      body .main .acerca-de .foto img {
+        vertical-align: top;
+        width: 100%; }
+    body .main .acerca-de article {
+      background: #fff;
+      padding: 40px 20px;
+      width: 50%;
+      position: relative;
+      top: 800px;
+      z-index: 1;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+      float: right; }
+      body .main .acerca-de article h3 {
+        font-size: 50px;
+        margin-bottom: 40px; }
+      body .main .acerca-de article p {
+        line-height: 28px;
+        margin-bottom: 15px; }
+    body .main .menu {
+      padding-top: 200px;
+      margin-bottom: 50px; }
+      body .main .menu .titulo {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 40px; }
+      body .main .menu .contenedor-menu,
+      body .main .menu .contenedor-menu2 {
+        border: 1px solid #000;
+        background: transparent;
+        padding: 10px;
+        overflow: hidden; }
+      body .main .menu article {
+        width: 50%;
+        float: left;
+        padding: 20px; }
+      body .main .menu .categoria {
+        font-size: 22px;
+        margin-bottom: 40px;
+        text-align: center; }
+      body .main .menu .platillo {
+        margin-bottom: 30px;
+        padding: 20px;
+        border-bottom: 4px dotted #000;
+        overflow: hidden; }
+      body .main .menu .nombre {
+        font-size: 20px;
+        margin-bottom: 15px;
+        float: left; }
+      body .main .menu .precio {
+        font-size: 20px;
+        margin-bottom: 15px;
+        float: right; }
+      body .main .menu .descripcion {
+        font-size: 16px;
+        color: #676767;
+        clear: both; }
+    body .main .galeria {
+      overflow: hidden; }
+      body .main .galeria .foto {
+        width: 25%;
+        float: left; }
+        body .main .galeria .foto img {
+          width: 100%;
+          vertical-align: top;
+          opacity: .7;
+          cursor: pointer; }
+          body .main .galeria .foto img:hover {
+            opacity: 1;
+            -webkit-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease; }
+    body .main .ubicacion {
+      background: #FFFAF4;
+      padding: 60px 0;
+      overflow: hidden; }
+      body .main .ubicacion .titulo {
+        font-family: Bookman Old Style;
+        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 40px; }
+      body .main .ubicacion .direccion {
+        width: 50%;
+        float: left;
+        text-align: left; }
+        body .main .ubicacion .direccion .calle {
+          margin-bottom: 15px; }
+      body .main .ubicacion .horarios {
+        float: right;
+        width: 50%;
+        text-align: right;
+        overflow: hidden; }
+        body .main .ubicacion .horarios .entre-semana,
+        body .main .ubicacion .horarios .fin-semana {
+          width: 50%;
+          float: left;
+          text-align: center; }
+        body .main .ubicacion .horarios h4 {
+          text-align: center;
+          margin-bottom: 20px; }
+    body .main .mapa {
+      width: 100%;
+      overflow: hidden; }
+      body .main .mapa iframe {
+        width: 100%;
+        max-height: 600px; }
+  body footer {
+    background: #000; }
+    body footer .copyright {
+      text-align: center;
+      padding: 15px 0;
+      color: #fff; }
+
+/*---------------------------MEDIA QUERIES--------------------------*/
+@media screen and (max-width: 800px) {
+  body header {
+    height: 350px; }
+    body header .contenedor {
+      position: static; }
+      body header .contenedor .textos {
+        position: static;
+        margin: 100px 0; }
+        body header .contenedor .textos .nombre {
+          font-size: 30px; }
+        body header .contenedor .textos h3 {
+          font-size: 18px; }
+      body header .contenedor .menu {
+        text-align: center; }
+        body header .contenedor .menu a {
+          margin: 10px 20px; }
+  body .main .acerca-de .contenedor .foto {
+    width: 100%;
+    position: relative; }
+  body .main .acerca-de .contenedor article {
+    position: relative;
+    width: 100%;
+    top: -50px;
+    transform: translate(0px, 0);
+    margin-bottom: -50px; }
+  body .main .menu .contenedor {
+    margin-top: -400px; }
+    body .main .menu .contenedor article {
+      width: 100%; }
+  body .main .galeria .foto {
+    width: 50%; }
+  body .main .mapa {
+    width: 80%;
+    margin: auto; } }
+@media screen and (max-width: 520px) {
+  body header .contenedor .menu a {
+    margin: 10px 10px;
+    font-size: 18px; }
+  body .main .acerca-de .contenedor article h3 {
+    font-size: 34px;
+    margin: 5px 0; }
+  body .main .menu article .nombre,
+  body .main .menu article .precio {
+    font-size: 16px;
+    line-height: 16px; }
+  body .main .menu article .categoria {
+    margin: 2px 0; }
+  body .main .ubicacion {
+    margin-bottom: 10px; }
+    body .main .ubicacion .contenedor .direccion,
+    body .main .ubicacion .contenedor .horarios {
+      width: 100%;
+      text-align: center; }
+  body footer .copyright {
+    padding: 0px 0; } }
+@media screen and (max-width: 400px) {
+  body header .contenedor .menu a {
+    margin: 15px 8px;
+    font-size: 16px; } }
+@media screen and (max-width: 301px) {
+  body header .contenedor .menu a {
+    margin: 15px 15px;
+    font-size: 16px; }
+  body header .contenedor .textos {
+    margin-top: 80px; } }
+
+/*# sourceMappingURL=estilos.css.map */
+
+/*-----------------------REDES SOCIALESS-------------------*/
+footer .redes-sociales{
+    background:#081443;
+    /*arriba y abajo,  0 hacia los aldos*/
+    padding: 60px 0;
+}
+footer .redes-sociales .contenedor{
+    display: flex;  /*poner uno al lado del otro*/
+    justify-content: center;    /*centrar los iconos(prueba poner space-beetwen para mas chido xd)*/
+}
+footer .redes-sociales a{
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block; /*se pondran uno abajo de otro pero no importa por que se acomodara con flexbox*/
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;    /*agrandar el tamaño de los iconos*/
+    /*arriba y abajo(0) y 20 hacia los lados*/
+    margin: 0 20px;
+}
+
+/*los fondos de las redes sociales se pueden conseguir en https://brandcolors.net*/
+footer .redes-sociales .twitter:hover{background: #1da1f2;}
+footer .redes-sociales .facebook:hover{background:#3b5998 ;}
+footer .redes-sociales .youtube:hover{background: #cd201f;}
+footer .redes-sociales .github:hover{background: #666666;}
+footer .redes-sociales .instagram:hover{background: #3f729b;}
+
